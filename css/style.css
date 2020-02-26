@@ -1,0 +1,220 @@
+/* font-family: 'Fredoka One', cursive;
+font-family: 'Roboto', sans-serif; */
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: calc(0.89rem + 0.4vw);
+  /* font-weight: 300 !important; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700 !important;
+}
+
+.titulos {
+  font-size: calc(2rem + 0.4vw);
+}
+
+.bg-rosa {
+  background-color: #ee3d5e;
+}
+
+.azul {
+  color: #00a7e4;
+}
+
+.bg-gris {
+  background-color: #2a2a2a;
+}
+
+/* <---- HOME ----> */
+
+/* quien es maria  */
+
+/* .quien-maria h2 {
+  font-size: calc(2rem + 0.4vw);
+} */
+
+.quien-maria-2 {
+  column-count: 3;
+  column-gap: 2.875em;
+  column-width: 200px;
+  line-height: 28px;
+}
+
+/* jamas div */
+
+.jamas-div p:first-child {
+  font-size: calc(1.85rem + 0.4vw);
+  font-weight: 300 !important;
+}
+
+.jamas-div p {
+  font-weight: 300 !important;
+}
+
+/* <---- GENERAL ----> */
+.ma-fondo-gris {
+  background-color: #f4f4f4;
+}
+
+.ma-texto-azul {
+  color: #0089bc;
+}
+
+/* <---- INVERSIÓN ----> */
+
+.ma-inversion-texto-columnas {
+  column-count: 2;
+}
+
+.ma-div-inversion {
+  padding: 2% 5%;
+}
+
+.ma-div-proyectos {
+  padding: 2% 4%;
+}
+
+.ma-div-proyectos img {
+  border-radius: 50%;
+  width: 80%;
+
+  align-self: center;
+}
+
+.ma-div-proyectos .card {
+  background: transparent;
+  border: 0px;
+}
+
+@media (max-width: 769px) {
+  .ma-inversion-texto-columnas {
+    column-count: 1;
+  }
+}
+
+/* <---- CONTACTO ----> */
+
+.ma-contacto-fondo {
+  background-color: #00a9ea;
+  padding: 6% 5%;
+}
+
+.ma-contacto-fondo p {
+  font-size: calc(1.2rem + 0.6vw);
+}
+
+.ma-contacto-boton {
+  border: 5px solid #ee3d5e;
+  border-radius: 6px;
+  background-color: #ee3d5e;
+}
+
+/* <---- FOOTER ----> */
+.ma-footer-fondo {
+  background-color: #f4f4f4;
+  color: #0089bc;
+  padding: 2% 5%;
+}
+
+.ma-logo-letra {
+  font-family: "Fredoka One", cursive;
+  letter-spacing: 0.8px;
+  font-size: calc(1.4rem + 0.8vw);
+}
+
+.ma-logo-letra + p {
+  font-size: calc(1.4rem + 0.8vw);
+}
+
+.ma-footer-fondo i {
+  font-size: 4.5vw;
+}
+
+/*================================*/
+
+/* <---- NAVBAR GALLERY ----> */
+.nav-link {
+  height: 32px;	
+  width: 127px;	
+  color: #9D9D9D;	
+  font-size: 27px;	
+  font-weight: 300;	
+  letter-spacing: 0.6px;	
+  line-height: 32px;
+  padding-bottom: .25rem!important;
+  display: initial !important;
+}
+
+.nav-pills .nav-link.active {
+  color: #353535 !important;
+  background-color: transparent !important;
+  border-bottom: #353535 solid 2px;
+  border-radius: 0;
+}
+
+.nav-pills .nav-link:hover {
+  color: #353535 !important;
+  background-color: transparent !important;
+  border-bottom: #353535 solid 2px;
+  border-radius: 0;
+}
+
+/* <---- GALLERY DRID ----> */
+.gallery-grid {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-auto-rows: 300px;
+  grid-gap: 12px;
+  padding: 10px;
+}
+
+.image {
+  vertical-align: baseline;
+  grid-area: span 1/span 1;
+}
+
+.image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+  will-change: opacity;
+  transition: all 0.3s;
+  opacity: 1;
+}
+
+.image--big {
+  vertical-align: baseline;
+  grid-area: span 2/span 2;
+}
+
+.image--horizontal {
+  grid-area: span 1 / span 2;
+}
+
+.image--vertical {
+  grid-area: span 2 / span 1;
+}
+
+@media (max-width: 992px) { 
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));;
+  }
+}
+
+@media (max-width: 576px) { 
+  .gallery-grid {
+    display: block;
+  }
+  .nav-item {
+    margin-bottom: .5rem;
+  }
+}
